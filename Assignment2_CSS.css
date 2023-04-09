@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+.custom-bg {
+	background-image: url('steak.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:50vh;
+	}
