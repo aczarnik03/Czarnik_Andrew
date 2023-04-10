@@ -1,8 +1,92 @@
 @charset "UTF-8";
 /* CSS Document */
-.custom-bg {
-	background-image: url('steak.jpeg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height:50vh;
+body {
+	background-color:#565656;
+}
+#title {
+	background-image:url('steak.jpeg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:400px;
+	background-position:center;
 	}
+#quote {
+	padding-top:140px;
+}
+#hamburger {
+	background-color:gray;
+}
+#cards {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-top:25px;
+}
+#card1 {
+	width:30rem;
+	margin:auto;
+}
+#card2 {
+	width:30rem;
+	margin:auto;
+}
+#card3 {
+	width:30rem;
+	margin:auto;
+}
+#carousel {
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:15px;
+	margin:auto;
+}
+#pic_cards {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-top:50px;
+}
+#pic_card1 {
+	width:18rem;
+	margin:auto;
+}
+#pic_card2 {
+	width:18rem;
+	margin:auto;
+}
+#pic_card3 {
+	width:18rem;
+	margin:auto;
+}
+#accordion {
+	display:flex;
+	flex-direction:column;
+	column-gap:40px;
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:40px;
+}
+#accordionExample {
+	padding-bottom:40px;
+}
+#doneness {
+  align-items:center;
+  justify-content:center;
+  margin:auto;
+  max-width:500px;
+}
+#doneness img {
+	width:100%;
+}
+@media screen and (min-width:768px) {
+	#mailing {padding-left:50px; padding-right:50px;}
+}
+@media screen and (min-width:992px) {
+	#cards {padding-left:10px; padding-right:10px; flex-direction:row; column-gap:5px;}
+	#card1 {width:20rem;}
+	#card2 {width:20rem;}
+	#card3 {width:20rem;}
+	#carousel {padding-left:150px; padding-right:150px; padding-top:30px;}
+	#pic_cards {padding-left:10px; padding-right:10px; flex-direction:row; column-gap:5px; align-items:top;}
+	#accordion {flex-direction:row;}
+}
