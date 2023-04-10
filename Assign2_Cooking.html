@@ -7,22 +7,24 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <link href="Assignment2_CSS.css" rel="stylesheet">
 </head>
-
+	
+	<!--body-->
+	
 <body>
 	
 	<!--navbar-->
 
-<section>
+<section id="navbar">
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand text-light" href="Assign2_Home.html">Steak Central</a>
-    <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand active text-light" aria-current="page" href="Assign2_Home.html">Steak Central</a>
+    <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="Assign2_Cooking.html">Cooking</a>
+          <a class="nav-link text-light" href="Assign2_Cooking.html">Cooking</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="Assign2_Gallery.html">Gallery</a>
@@ -32,7 +34,84 @@
   </div>
 </nav>
 </section>
-medium rare
+	
+	<!--accordion-->
+	
+	<section id="accordion">
+	<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Steak Rare
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-dark text-light fw-lighter">
+		  Cooked quickly at high temperature, leaving the center cool and red. 
+      </div>
+    </div>
+  </div>
+		
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Steak Medium Rare
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse bg-dark text-light" data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-dark text-light fw-lighter">
+        Cooked at a moderately high temperature, giving it a warm pink center with some red. (Best way to cook)
+      </div>
+    </div>
+  </div>
+		
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Steak Medium
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-dark text-light fw-lighter">
+        Cooked at a moderate temperature, resulting in a pink center with only a small amount of pink in the middle.
+      </div>
+    </div>
+  </div>
+		
+		  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Steak Medium Well
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-dark text-light fw-lighter">
+        Cooked slightly higher than medium, resulting in a slightly pink center with a mostly gray-brown color thorughout.
+      </div>
+    </div>
+  </div>
+		
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Steak Well Done
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-dark text-light fw-lighter">
+        Cooked at a high temperature for a longer period, resulting in a brown and fully cooked interior with no pink. (This is the worst possible way to cook a steak)
+      </div>
+    </div>
+  </div>
+</div>
+		
+		<!--doneness chart-->
+		
+		<div id="doneness">
+		<img src="steak_doneness.jpeg" alt="steak doneness chart">
+		</div>
+		
+	</section>
 	
 </body>
 </html>
