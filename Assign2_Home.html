@@ -10,15 +10,15 @@
 	
 	<!--body-->
 	
-<body class="custom-bg">
+<body>
 	
 	<!--navbar-->
 
-<section>
+<section id="navbar">
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand active text-light" aria-current="page" href="Assign2_Home.html">Steak Central</a>
-    <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -37,10 +37,8 @@
 	
 	<!--quote_and_intro-->
 	
-<div class="container" style="height:130px;">
-	</div>
-<section class="container-fluid text-light" style="height:60px;">
-	<figure class="text-center">
+<div id="title" class="container-fluid text-light">
+	<figure id="quote" class="text-center">
   <blockquote class="blockquote">
     <p>"I hate reality, but it's still the best place to get a steak."</p>
   </blockquote>
@@ -49,14 +47,13 @@
   </figcaption>
 </figure>
 	<p class="text-center pb-4 fw-lighter">We take our steaks seriously and want to encourage others to do so too. We think you'll find that there's plenty at steak.</p>
-	</section>
+	</div>
+	<main>
 	
 	<!--mailing_list-->
 	
-<div class="container" style="height:100px;">
-	</div>
-<section class="container-fluid text-dark">
-	<p class="text-center h5">Join our mailing list today!</p>
+<section id="mailing" class="container-fluid text-dark pt-3">
+	<p class="text-center h5 text-light">Join our mailing list today!</p>
 <form class="row g-3">
 <div class="row g-3 pt-2">
   <div class="col">
@@ -75,7 +72,34 @@
 </form>
 </section>
 	
-	<!--next-->
-	
+	<!--cards-->
+		
+<section id="cards">
+		<div id="card1" class="card text-bg-dark mb-3">
+  <div class="card-header">Food & Wine</div>
+  <div class="card-body">
+    <h5 class="card-title">Excellent Steak Resource</h5>
+    <p class="card-text">We love sending our readers this way to appreciate other steaks.</p>
+  </div>
+</div>
+			<div id="card2" class="card text-bg-dark mb-3">
+  <div class="card-header">Food Network</div>
+  <div class="card-body">
+    <h5 class="card-title">We Love Steak Central</h5>
+    <p class="card-text">Our staff and fans alike love the community here!</p>
+  </div>
+</div>
+			<div id="card3" class="card text-bg-dark mb-3">
+  <div class="card-header">Gordon Ramsay</div>
+  <div class="card-body">
+    <h5 class="card-title">Truly Inspiring</h5>
+    <p class="card-text">This website inspired me to cook the best !@&#%?$ steak ever.</p>
+  </div>
+</div>
+		</section>
+		
+		
+		
+	</main>
 </body>
 </html>
